@@ -1,0 +1,23 @@
+{
+  "name": "vue-ip-input",
+  "version": "1.0.0",
+  "description": "一个基于vue3的ip输入框",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vue3",
+    "ip",
+    "input",
+    "ip-input",
+    "vue3-ip",
+    "vue",
+    "vue-ip",
+    "vue3-ip",
+    "vue-ip-input",
+    "vue3-ip-input"
+  ],
+  "author": "nicai",
+  "license": "MIT"
+}
