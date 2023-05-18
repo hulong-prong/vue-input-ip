@@ -6,15 +6,22 @@ import commonjs from "@rollup/plugin-commonjs";
 
 export default {
   input: "package/IpInput/IpInput.ts",
+  external: ["vue"],
   output: [
     {
       file: `dist/vue-ip-input.es.js`,
       format: "es",
+      globals: {
+        vue: "Vue",
+      },
     },
     {
       file: `dist/vue-ip-input.umd.js`,
       name: "vueIpInput",
       format: "umd",
+      globals: {
+        vue: "Vue",
+      },
     },
   ],
   plugins: [
@@ -23,7 +30,6 @@ export default {
     }),
     postcss({
       extensions: [".css"],
-      extract: false,
     }),
     typescriptPlugin(),
     resolve(),

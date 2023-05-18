@@ -1,6 +1,6 @@
 {
   "name": "vue-input-ip",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "一个基于vue3的ip输入框",
   "type": "module",
   "main": "dist/vue-ip-input.es.js",
