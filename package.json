@@ -2,9 +2,22 @@
   "name": "vue-ip-input",
   "version": "1.0.0",
   "description": "一个基于vue3的ip输入框",
-  "main": "index.js",
+  "type": "module",
+  "main": "dist/vue-ip-input.es.js",
+  "module": "dist/vue-ip-input.es.js",
+  "unpkg": "dist/vue-ip-input.umd.js",
+  "types": "dist/IpInput.d.ts",
+  "files": [
+    "dist/**/*",
+    "package/**/*",
+    "package.json",
+    "types"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "rollup -c -w",
+    "build": "rollup -c",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "keywords": [
     "vue3",
@@ -19,5 +32,34 @@
     "vue3-ip-input"
   ],
   "author": "nicai",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "vue": "^3.3.2"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.21.5",
+    "@babel/preset-typescript": "^7.21.5",
+    "@rollup/plugin-commonjs": "^25.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "@storybook/addon-essentials": "7.0.12",
+    "@storybook/addon-interactions": "7.0.12",
+    "@storybook/addon-links": "7.0.12",
+    "@storybook/blocks": "7.0.12",
+    "@storybook/testing-library": "0.0.14-next.2",
+    "@storybook/vue3": "7.0.12",
+    "@storybook/vue3-webpack5": "7.0.12",
+    "@vue/compiler-sfc": "3.3.2",
+    "less": "^4.1.3",
+    "postcss": "^8.4.23",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "rollup": "^3.21.8",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "rollup-plugin-vue": "^6.0.0",
+    "storybook": "7.0.12",
+    "typescript": "^5.0.4",
+    "vue-loader": "17.1.1"
+  }
 }
