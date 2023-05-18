@@ -1,4 +1,4 @@
-## vue-ip-input
+## vue-input-ip
 
 这是一个专门用于 IP 输入的组件，基于 vue3 模仿了微软 IP 输入的功能加以实现
 
